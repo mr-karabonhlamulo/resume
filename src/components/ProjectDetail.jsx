@@ -30,9 +30,13 @@ const ProjectDetail = ({ project, onBack }) => {
             </header>
 
             <div className="detail-image">
-                <div className="detail-image-placeholder">
-                    {project.title} Preview
-                </div>
+                {project.image ? (
+                    <img src={project.image} alt={project.title} className="detail-img-cover" />
+                ) : (
+                    <div className="detail-image-placeholder">
+                        {project.title} Preview
+                    </div>
+                )}
                 {/* Real image support logic can go here later */}
             </div>
 

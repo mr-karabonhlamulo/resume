@@ -8,10 +8,13 @@ const Sidebar = ({ profile, skills, languages, social }) => {
         <aside className="sidebar">
             <div className="sidebar-card profile-card">
                 <div className="profile-image-container">
-                    {/* Placeholder for profile image */}
-                    <div className="profile-placeholder">
-                        <span>Profile Img</span>
-                    </div>
+                    {profile.image ? (
+                        <img src={profile.image} alt={profile.name} className="profile-image" />
+                    ) : (
+                        <div className="profile-placeholder">
+                            <span>Profile Img</span>
+                        </div>
+                    )}
                 </div>
 
                 <h2 className="profile-name">{profile.fullName}</h2>

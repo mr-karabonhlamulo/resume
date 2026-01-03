@@ -8,7 +8,8 @@
         "summary": "BScIT graduate specializing in software engineering principles, systems support, and network infrastructure. Focused on designing scalable, modular solutions using clean code practices and formal architecture decisions.",
         "location": "Pretoria, South Africa",
         "experience": "Graduate / Junior",
-        "availability": "Appointment Open"
+        "availability": "Appointment Open",
+        "image": "/assets/profile/profile.jpg"
     },
     "contact": {
         "email": "sir.karabom@gmail.com",

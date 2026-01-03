@@ -41,9 +41,13 @@ const ProjectGrid = ({ projects, onProjectClick }) => {
                         style={{ cursor: onProjectClick ? 'pointer' : 'default' }}
                     >
                         <div className="project-image">
-                            <div className="image-placeholder">
-                                {project.title}
-                            </div>
+                            {project.image ? (
+                                <img src={project.image} alt={project.title} className="project-img-cover" />
+                            ) : (
+                                <div className="image-placeholder">
+                                    {project.title}
+                                </div>
+                            )}
                         </div>
                         <div className="project-info">
                             <h4 className="project-title">{project.title}</h4>
