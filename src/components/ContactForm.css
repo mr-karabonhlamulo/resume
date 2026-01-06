@@ -3,16 +3,12 @@
     border-radius: 0;
     border: none;
     box-shadow: none;
-    display: block;
-    /* Stack naturally */
-}
-
-@media (min-width: 768px) {
-    .contact-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        gap: var(--space-xl);
-    }
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    max-width: 800px;
+    /* Optional: limit width slightly for readability, but user asked for "full width and single container". I'll use 100% or just standard block */
+    width: 100%;
 }
 
 /* Banner becomes text block */
@@ -25,21 +21,18 @@
     display: block;
 }
 
-.contact-banner::before {
-    display: none;
-}
-
 .contact-banner h3 {
     color: var(--text-main);
     font-size: 2rem;
     font-weight: 300;
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-xs);
     line-height: 1.2;
 }
 
 .form-container {
     padding: 0;
     background: none;
+    width: 100%;
 }
 
 .form-intro {

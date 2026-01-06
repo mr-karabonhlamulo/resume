@@ -31,7 +31,6 @@
 }
 
 .intro-mini p {
-    max-width: 900px;
     color: var(--text-secondary);
     font-size: 1rem;
     margin-bottom: var(--space-lg);

@@ -1,22 +1,53 @@
 import React, { useEffect } from 'react';
 import './ProjectDetail.css';
-import { MdArrowBack } from 'react-icons/md';
+import { MdArrowBack, MdArrowForward } from 'react-icons/md';
 import { getTechIcon } from './ProjectGrid';
 
-const ProjectDetail = ({ project, onBack }) => {
+const ProjectDetail = ({ project, projects = [], onBack, onNavigate }) => {
 
-    // Scroll to top when detail view opens
+    // Scroll to top when detail view opens or project changes
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, []);
+    }, [project.id]);
 
     if (!project) return null;
 
+    // Navigation Logic
+    const currentIndex = projects.findIndex(p => p.id === project.id);
+    const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
+    const nextProject = currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
+
+    const handleNavigate = (targetProject) => {
+        if (targetProject && onNavigate) {
+            onNavigate(targetProject);
+        }
+    };
+
+    // Related Projects Logic
+    const relatedProjects = projects
+        .filter(p => p.category === project.category && p.id !== project.id)
+        .slice(0, 3); // Limit to 3
+
     return (
         <article className="project-detail-container">
-            <button className="back-btn" onClick={onBack}>
-                <MdArrowBack /> Back to Projects
-            </button>
+            <div className="detail-nav-bar">
+                <button className="back-btn" onClick={onBack}>
+                    <MdArrowBack /> Back to Projects
+                </button>
+
+                <div className="project-nav-controls">
+                    {prevProject && (
+                        <button className="nav-arrow-btn" onClick={() => handleNavigate(prevProject)} title="Previous Project">
+                            <MdArrowBack /> Prev
+                        </button>
+                    )}
+                    {nextProject && (
+                        <button className="nav-arrow-btn" onClick={() => handleNavigate(nextProject)} title="Next Project">
+                            Next <MdArrowForward />
+                        </button>
+                    )}
+                </div>
+            </div>
 
             <header className="detail-header">
                 <h1 className="detail-title">{project.title}</h1>
@@ -37,7 +68,6 @@ const ProjectDetail = ({ project, onBack }) => {
                         {project.title} Preview
                     </div>
                 )}
-                {/* Real image support logic can go here later */}
             </div>
 
             <div className="detail-content">
@@ -78,6 +108,23 @@ const ProjectDetail = ({ project, onBack }) => {
                     ))}
                 </div>
             </footer>
+
+            {/* Related Projects Section */}
+            {relatedProjects.length > 0 && (
+                <section className="related-projects-section">
+                    <h3>Related Projects</h3>
+                    <div className="related-grid">
+                        {relatedProjects.map(p => (
+                            <div key={p.id} className="related-card" onClick={() => handleNavigate(p)}>
+                                <div className="related-image">
+                                    {p.image ? <img src={p.image} alt={p.title} /> : <div className="related-placeholder">{p.title}</div>}
+                                </div>
+                                <h4>{p.title}</h4>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            )}
         </article>
     );
 };

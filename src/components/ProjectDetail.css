@@ -4,7 +4,15 @@
     margin: 0 auto;
 }
 
-.back-btn {
+.detail-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.back-btn,
+.nav-arrow-btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -13,13 +21,18 @@
     background: none;
     border: none;
     cursor: pointer;
-    margin-bottom: 24px;
     transition: color 0.2s;
     padding: 0;
 }
 
-.back-btn:hover {
+.back-btn:hover,
+.nav-arrow-btn:hover {
     color: var(--text-main);
+}
+
+.project-nav-controls {
+    display: flex;
+    gap: 16px;
 }
 
 .detail-header {
@@ -58,7 +71,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    overflow: hidden; /* Added to clip image */
+    overflow: hidden;
 }
 
 .detail-img-cover {
@@ -96,6 +109,9 @@
 
 .tech-section {
     margin-top: 40px;
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .tech-list {
@@ -107,6 +123,64 @@
 
 .tech-item {
     font-size: 2rem;
+}
+
+/* Related Projects */
+.related-projects-section h3 {
+    font-size: 1.2rem;
+    color: var(--text-main);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.related-card {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.related-card:hover {
+    opacity: 0.8;
+}
+
+.related-image {
+    height: 140px;
+    background: #f4f4f4;
+    margin-bottom: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.related-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.related-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-align: center;
+}
+
+.related-card h4 {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin: 0;
 }
 
 @keyframes fadeIn {
@@ -128,5 +202,9 @@
 
     .detail-image {
         height: 250px;
+    }
+
+    .related-grid {
+        grid-template-columns: 1fr;
     }
 }

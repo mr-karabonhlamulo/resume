@@ -3,6 +3,7 @@ import ExperienceTimeline from './ExperienceTimeline';
 import ProjectGrid from './ProjectGrid';
 import ProjectDetail from './ProjectDetail';
 import ContactForm from './ContactForm';
+import AdminDashboard from './AdminDashboard';
 import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import './MainContent.css';
 
@@ -44,6 +45,12 @@ const MainContent = ({ profile, experience, education, projects, contact }) => {
                     >
                         Connect
                     </button>
+                    <button
+                        className={`nav-btn ${activeTab === 'admin' ? 'active' : ''}`}
+                        onClick={() => handleTabChange('admin')}
+                    >
+                        Admin
+                    </button>
                 </nav>
             </header>
 
@@ -61,7 +68,9 @@ const MainContent = ({ profile, experience, education, projects, contact }) => {
                         {selectedProject ? (
                             <ProjectDetail
                                 project={selectedProject}
+                                projects={projects}
                                 onBack={() => setSelectedProject(null)}
+                                onNavigate={setSelectedProject}
                             />
                         ) : (
                             <ProjectGrid
@@ -78,9 +87,17 @@ const MainContent = ({ profile, experience, education, projects, contact }) => {
                     </div>
                 )}
 
+                {activeTab === 'admin' && (
+                    <div className="slide-content fade-in">
+                        <AdminDashboard />
+                    </div>
+                )}
+
             </div>
         </main>
     );
 };
 
 export default MainContent;
+
+
