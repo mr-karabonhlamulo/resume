@@ -50,6 +50,7 @@
         {
             "id": 1,
             "company": "Sonxit Pty Ltd",
+            "logo": "https://placehold.co/100x100/000000/FFFFFF?text=Sonxit",
             "role": "Software Developer - Remote",
             "period": "Feb 2019 – Nov 2024",
             "location": "Randburg (Remote)",
@@ -65,6 +66,7 @@
         {
             "id": 2,
             "company": "Sonxit Pty Ltd",
+            "logo": "https://placehold.co/100x100/000000/FFFFFF?text=Sonxit",
             "role": "Software Developer - Hybrid",
             "period": "Sep 2022 – Jan 2024",
             "location": "Sandton",
@@ -80,6 +82,7 @@
         {
             "id": 3,
             "company": "MDS Collivery",
+            "logo": "https://placehold.co/100x100/004d40/FFFFFF?text=MDS",
             "role": "Software Systems Developer",
             "period": "Jan 2017 – Jul 2019",
             "location": "Johannesburg",
@@ -95,6 +98,7 @@
         {
             "id": 4,
             "company": "PMD MS Telecommunications",
+            "logo": "https://placehold.co/100x100/333333/FFFFFF?text=PMD",
             "role": "Junior Network Engineer",
             "period": "Jan 2016 – Dec 2017",
             "location": "Centurion",

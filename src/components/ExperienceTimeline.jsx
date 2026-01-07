@@ -17,6 +17,11 @@ const ExperienceTimeline = ({ experience, education }) => {
                             </div>
                             <div className="timeline-content">
                                 <div className="timeline-header">
+                                    {job.logo && (
+                                        <div className="company-logo">
+                                            <img src={job.logo} alt={`${job.company} Logo`} />
+                                        </div>
+                                    )}
                                     <h4 className="role-title">{job.role}</h4>
                                 </div>
                                 <div className="timeline-meta">
