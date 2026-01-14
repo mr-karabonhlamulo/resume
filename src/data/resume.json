@@ -11,33 +11,31 @@
         "linkedin": "https://linkedin.com/in/karabo-magongwa",
         "github": "https://github.com/sir-karabo"
     },
-    "professional_summary": "Software Engineer with strong foundations in structured system design, clean architecture, and scalable web development. I apply disciplined engineering principles—clarity in design, predictable execution, and efficient delivery—to build reliable and maintainable software. Experienced in developing both front-end and back-end features using modern frameworks, integrating APIs, and contributing to modular architectures. Known for analytical problem-solving, calm execution under pressure, and the ability to turn complex requirements into stable solutions.",
+    "professional_summary": "Adaptable Software Engineer specializing in the design and delivery of robust, high-performance systems. I approach software development with a holistic 'specialist' mindset—focusing on architectural integrity, code efficiency, and system reliability over narrow tech silos. My experience spans full-stack development, database optimization, and infrastructure automation, allowing me to build solutions that are not only functional but scalable and maintainable. I thrive in dynamic environments where complex problems require engineered, data-driven solutions.",
     "core_skills": {
         "technical": [
-            "C# (OOP, MVC, API Development)",
-            "Java (Enterprise Patterns)",
-            "Python (Automation & Scripting)",
-            "PHP & Laravel (Backend Architecture)",
-            "JavaScript (ES6+, Component-Based Design)",
-            "ASP.NET & ASP.NET Core",
-            "React (UI Logic, State Management)",
-            "SQL Server & MySQL",
-            "REST API Development",
-            "Git Version Control"
+            "System Architecture & Design",
+            "Full Stack Development (React, Node.js, PHP)",
+            "Enterprise Backend (C#, Java, .NET)",
+            "Infrastructure & Automation (Docker, CI/CD)",
+            "Database Engineering (SQL, MongoDB, Optimization)",
+            "API Development & Integration (REST, Microservices)",
+            "Version Control & Workflow (Git, Agile)",
+            "Cloud Services (AWS, Azure)"
         ],
         "support_administration": [
-            "Object-Oriented Design Principles",
-            "Clean Code & Pattern-Based Architecture",
-            "System Design & Data Flow Structuring",
-            "Agile/Scrum Project Collaboration",
-            "Technical Documentation & Standards"
+            "Technical Problem Solving",
+            "System Reliability & Performance",
+            "Code Quality & Standards",
+            "Project Documentation",
+            "Requirement Analysis"
         ],
         "soft_skills": [
-            "Structured Technical Communication",
-            "Collaborative Problem-Solving",
             "Analytical Thinking",
-            "Reliable Task Completion",
-            "Adaptability and Continuous Learning"
+            "Adaptability",
+            "Collaborative Engineering",
+            "Clear Technical Communication",
+            "Continuous Improvement"
         ]
     },
     "professional_experience": [
@@ -45,18 +43,16 @@
             "id": 1,
             "company": "Sonxit Pty Ltd",
             "logo": "https://placehold.co/100x100/000000/FFFFFF?text=Sonxit",
-            "role": "Junior Software Developer",
+            "role": "Software Developer",
             "period": "Jun 2022 – Jun 2024",
             "location": "Sandton (Remote)",
-            "description": "Developed and maintained full-stack application features using Laravel, React, and Node.js. Contributed to improving system structure through modular MVC patterns and clean architecture principles. Integrated third-party APIs to support logistics and courier operations. Worked within an Agile workflow, ensuring predictable delivery and stable deployments. Maintained a disciplined version control process using Git and documented technical changes to improve team communication and reduce ambiguity.",
+            "description": "Engineered full-stack solutions and optimized development workflows in a fast-paced environment. Transitioned legacy monolithic components into modular architectures, enhancing system scalability and maintainability. Implemented automated deployment pipelines and containerization strategies that streamlined release cycles, ensuring consistent and reliable software delivery alongside robust feature development.",
             "tech_stack": [
-                "Laravel",
-                "React",
-                "Node.js",
-                "MySQL",
-                "API Integration",
-                "Git",
-                "MVC Architecture"
+                "Software Architecture",
+                "Full Stack Development",
+                "Automation",
+                "Containerization",
+                "Database Management"
             ]
         },
         {
@@ -66,33 +62,28 @@
             "role": "Software Systems Developer",
             "period": "Jan 2017 – Jul 2019",
             "location": "Johannesburg",
-            "description": "Worked on logistics and courier systems, focusing on system stability, real-time data processing, and multi-user optimization. Improved backend performance through structured code, testing, and deployment cycles. Contributed to version control discipline and CI/CD practices to ensure smooth feature rollouts. Applied modular design principles to increase maintainability and reduce production issues.",
+            "description": "Focused on the core stability and performance of high-volume logistics systems. Developed backend logic that ensured data integrity across thousands of daily transactions. Collaborated on maximizing system uptime through efficient database querying, load balancing strategies, and rigorous integration testing, establishing a foundation of reliability for critical business operations.",
             "tech_stack": [
-                "PHP",
-                "Laravel",
-                "MERN Stack",
-                "Docker",
-                "SQL",
-                "Jenkins",
-                "Kubernetes",
-                "CI/CD",
-                "Linux",
-                "JIRA"
+                "Backend Engineering",
+                "System Optimization",
+                "Database Design",
+                "Linux Environment",
+                "Integration Testing"
             ]
         },
         {
             "id": 3,
             "company": "PMD MS Telecommunications",
             "logo": "https://placehold.co/100x100/000000/FFFFFF?text=PMDMS",
-            "role": "Junior Networking",
+            "role": "Infrastructure Support",
             "period": "Jan 2016 – Dec 2017",
             "location": "Centurion",
-            "description": "Provided networking support and infrastructure setup, including installation and configuration of local networks and hardware. Maintained compliance documentation, performance reporting, and technical logs. Gained foundational experience in networking concepts and processes, which later informed DevOps and system architecture practices.",
+            "description": "Provided specialized technical support for network and hardware infrastructure. Ensured the operational continuity of essential communications systems through proactive maintenance, precise configuration of network devices, and systematic troubleshooting. This foundational role cultivated a deep understanding of the physical and logical layers supporting enterprise software.",
             "tech_stack": [
-                "Networking Fundamentals",
-                "Troubleshooting",
-                "Hardware Setup",
-                "System Documentation"
+                "Network Engineering",
+                "System Maintenance",
+                "Technical Support",
+                "Infrastructure Configuration"
             ]
         }
     ],
@@ -104,7 +95,7 @@
             "degree": "BSc. in Information Technology",
             "period": "2020 – 2024",
             "location": "South Africa",
-            "focus": "Software Engineering major with emphasis on algorithms, structured programming, database systems, and distributed computing. Strengthened analytical thinking and system design skills through practical coursework and applied projects."
+            "focus": "Comprehensive study of Software Engineering, focusing on distributed systems, advanced algorithms, and enterprise architecture. Applied academic theory to practical, industry-relevant projects involving modern tech stacks and complex data structures."
         },
         {
             "id": 2,
@@ -113,7 +104,7 @@
             "degree": "Diploma in Software Development",
             "period": "2013 – 2016",
             "location": "South Africa",
-            "focus": "Foundational training in systems development, network fundamentals, and infrastructure configuration. Gained early exposure to business intelligence, data workflows, and structured technical environments."
+            "focus": "Technical training centered on the fundamentals of programming, networking, and business systems analysis. Built a strong base in operational logic and application lifecycle management."
         },
         {
             "id": 3,

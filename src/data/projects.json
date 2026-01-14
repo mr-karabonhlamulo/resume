@@ -1,120 +1,242 @@
-{
-    "personal_info": {
-        "full_name": "Karabo Nhlamulo Magongwa",
-        "title": "Software Engineer",
-        "degree": "Bachelor of Science in Information Technology",
-        "email": "sir.karabom@gmail.com",
-        "phone": "+27 71 727 9673",
-        "location": "South Africa",
-        "image": "/assets/profile/profile-image.jpg",
-        "availability": "Available for Full-time & Contract Roles",
-        "linkedin": "https://linkedin.com/in/karabo-magongwa",
-        "github": "https://github.com/sir-karabo"
-    },
-    "professional_summary": "Software Engineer with a strong foundation in structured system design, clean architecture, and disciplined development workflows. I focus on building solutions that are reliable, maintainable, and aligned to long-term business requirements. With experience across academic and professional environments, I apply consistent engineering principles—clarity in design, predictability in execution, and efficiency in delivery. Known for a calm, analytical approach to problem-solving and the ability to translate complex requirements into stable, production-ready software.",
-    "core_skills": {
-        "technical": [
-            "C# (OOP, MVC, API Development)",
-            "Java (Enterprise Patterns)",
-            "Python (Automation & Scripting)",
-            "PHP & Laravel (Backend Architecture)",
-            "JavaScript (ES6+, Component-Based Design)",
-            "ASP.NET & ASP.NET Core",
-            "React (State Management & UI Logic)",
-            "SQL Server & MySQL (Optimized Querying)",
-            "REST APIs (Scalable Integrations)",
-            "Git (Structured Version Control)"
+[
+    {
+        "id": 101,
+        "title": "LocaGroca (Food)",
+        "category": "iOS Development",
+        "image": "https://placehold.co/600x400/FF6B6B/FFFFFF?text=LocaGroca",
+        "year": "2024",
+        "role": "Mobile Engineer",
+        "description": "Architected a high-performance SwiftUI application with a focus on reliability and offline-first capabilities. Implemented MVVM architecture to decouple UI from logic, enabling automated unit testing and streamlined CI/CD workflows for rapid feature delivery.",
+        "outcome": "A polished, responsive iOS experience emphasizing local engagement and fresh aesthetics.",
+        "techStack": [
+            "Swift",
+            "SwiftUI",
+            "CoreData"
         ],
-        "support_administration": [
-            "Object-Oriented Design Principles",
-            "Clean Code & Pattern-Based Architecture",
-            "System Design & Data Flow Structuring",
-            "Agile/Scrum Collaboration",
-            "Technical Documentation & Standards"
-        ],
-        "soft_skills": [
-            "Clear and Structured Technical Communication",
-            "Collaborative Problem-Solving",
-            "Logical and Analytical Thinking",
-            "Reliable Task Execution",
-            "Adaptability and Continuous Learning"
-        ]
+        "metrics": {
+            "price": "Private",
+            "quality": "Production Ready",
+            "time": "Active"
+        }
     },
-    "professional_experience": [
-        {
-            "id": 1,
-            "company": "Sonxit Pty Ltd",
-            "logo": "https://placehold.co/100x100/000000/FFFFFF?text=Sonxit",
-            "role": "Junior Software Developer",
-            "period": "Jun 2022 – Jun 2024",
-            "location": "Sandton (Remote)",
-            "description": "Contributed to the development and maintenance of full-stack application features using Laravel, MERN, and structured MVC patterns. Applied clean architecture principles to improve system modularity and reduce technical debt. Strengthened API integrations for logistics operations and supported team workflows through disciplined version control, structured documentation, and consistent communication. Maintained a focus on platform reliability, predictable behaviour, and maintainable codebases.",
-            "tech_stack": [
-                "Laravel",
-                "MERN Stack",
-                "MVC",
-                "API Integration",
-                "Version Control"
-            ]
-        },
-        {
-            "id": 2,
-            "company": "Sandi",
-            "logo": "https://placehold.co/100x100/000000/FFFFFF?text=Sandi",
-            "role": "Software Developer",
-            "period": "Jun 2019 – Jun 2021",
-            "location": "Sandburg (Hybrid)",
-            "description": "Supported server-side application development with a focus on architectural consistency, reliability, and maintainable coding practices. Participated in code reviews to ensure clean logic, stable deployments, and adherence to standards. Worked with clients and team leads to translate requirements into technical tasks, ensuring clarity in execution and reducing development ambiguity.",
-            "tech_stack": [
-                "Server-side Development",
-                "Code Reviews",
-                "API Integration",
-                "Requirement Analysis"
-            ]
+    {
+        "id": 102,
+        "title": "Grocery System",
+        "category": "Full-Stack Mobile",
+        "image": "https://placehold.co/600x400/4ECDC4/FFFFFF?text=Grocery+App",
+        "year": "2024",
+        "role": "Full Stack Engineer",
+        "description": "Designed a fault-tolerant full-stack ecosystem bridging iOS clients with backend services. Optimized API gateways for low-latency synchronization of inventory states and implemented rigorous data validation pipelines to ensure immediate consistency across distributed systems.",
+        "outcome": "Seamless synchronization between user cart, inventory, and order management.",
+        "techStack": [
+            "Swift",
+            "Full Stack",
+            "REST API"
+        ],
+        "metrics": {
+            "price": "Private",
+            "quality": "Scalable",
+            "time": "Active"
         }
-    ],
-    "education": [
-        {
-            "id": 1,
-            "institution": "Belgium Campus ITVersity",
-            "logo": "https://placehold.co/100x100/A5092A/FFFFFF?text=BC",
-            "degree": "BSc. in Information Technology",
-            "period": "2020 – 2024",
-            "location": "South Africa",
-            "focus": "Software Engineering major with emphasis on algorithms, databases, structured programming, and distributed computing. Developed a disciplined engineering approach grounded in analysis, system architecture, and sustainable code design."
-        },
-        {
-            "id": 2,
-            "institution": "Belgium Campus ITVersity",
-            "logo": "https://placehold.co/100x100/A5092A/FFFFFF?text=BC",
-            "degree": "Diploma in Software Development",
-            "period": "2013 – 2016",
-            "location": "South Africa",
-            "focus": "Training in network fundamentals, infrastructure configuration, and business intelligence systems, providing a strong base for understanding real-world system environments and technical ecosystems."
-        },
-        {
-            "id": 3,
-            "institution": "Willowridge High School",
-            "logo": "https://placehold.co/100x100/003366/FFFFFF?text=WHS",
-            "degree": "National Senior Certificate",
-            "period": "2008 – 2012",
-            "location": "Pretoria, South Africa",
-            "focus": "Completed with University Exemption."
+    },
+    {
+        "id": 201,
+        "title": "MediPlus (Hospital)",
+        "category": "Enterprise Systems",
+        "image": "https://placehold.co/600x400/E74C3C/FFFFFF?text=MediPlus",
+        "year": "2024",
+        "role": "Backend Engineer",
+        "description": "Engineered a secure, HIPAA-compliant enterprise platform using C# and .NET. Prioritized system availability and effortless scalability through robust backend architecture, ensuring critical patient data integrity and zero-downtime handling of administrative workflows.",
+        "outcome": "Improved data accuracy and administrative efficiency in a healthcare context.",
+        "techStack": [
+            "C#",
+            ".NET",
+            "Blazor"
+        ],
+        "metrics": {
+            "price": "Private",
+            "quality": "Stable",
+            "time": "Active"
         }
-    ],
-    "languages": [
-        "English",
-        "Sepedi",
-        "Tswana",
-        "Xitsonga"
-    ],
-    "references": [
-        {
-            "name": "Professional References",
-            "role": "Available upon request",
-            "github": "https://github.com/mr-karabonhlamulo",
-            "linkedin": "https://www.linkedin.com/in/mr-karabonhlamulo",
-            "phone": "+27 67 252 1424"
+    },
+    {
+        "id": 202,
+        "title": "Voyager Booking",
+        "category": "Enterprise Systems",
+        "image": "https://placehold.co/600x400/F1C40F/FFFFFF?text=Voyager",
+        "year": "2024",
+        "role": "Systems Architect",
+        "description": "Developed a transaction-heavy booking system designed for high concurrency. Optimized database indexing and query performance within the SQL layer to handle peak load traffic, ensuring ACID compliance and fail-safe booking orchestration.",
+        "outcome": "A reliable, transaction-safe booking system for transport management.",
+        "techStack": [
+            "C#",
+            "ASP.NET",
+            "SQL"
+        ],
+        "metrics": {
+            "price": "Private",
+            "quality": "Robust",
+            "time": "Active"
         }
-    ]
-}
+    },
+    {
+        "id": 10,
+        "title": "LibraCore (Library)",
+        "category": "Web Development",
+        "image": "/assets/projects/project-10.jpg",
+        "year": "2024",
+        "role": "Lead Developer",
+        "description": "Modernized legacy systems into a scalable, component-driven React application. Established a strict type-safe environment using TypeScript to minimize runtime errors and optimized the build pipeline for rapid asset delivery/loading performance.",
+        "outcome": "A highly interactive, visually striking platform for digital resource management.",
+        "techStack": [
+            "TypeScript",
+            "React",
+            "Node.js"
+        ],
+        "metrics": {
+            "price": "Private",
+            "quality": "Modern UI",
+            "time": "Active"
+        }
+    },
+    {
+        "id": 11,
+        "title": "Futuristic Banking",
+        "category": "FinTech & Web",
+        "image": "/assets/projects/project-11.jpg",
+        "year": "2024",
+        "role": "Frontend Architect",
+        "description": "Orchestrated a premium UI performance strategy by integrating 3D dynamic elements with lightweight rendering engines. Focused on maintaining 60fps interaction rates and secure state management to mirror the reliability required in high-stakes financial environments.",
+        "outcome": "A premium financial simulation platform with high user engagement metrics.",
+        "techStack": [
+            "TypeScript",
+            "React",
+            "3D Animation"
+        ],
+        "metrics": {
+            "price": "Private",
+            "quality": "Premium UX",
+            "time": "Active"
+        }
+    },
+    {
+        "id": 15,
+        "title": "Home Services (MVC)",
+        "category": "PHP Systems",
+        "image": "/assets/projects/project-15.jpg",
+        "year": "2024",
+        "role": "Backend Developer",
+        "description": "Built a custom, lightweight MVC framework to eliminate bloat and maximize server response times. strictly enforced separation of concerns to allow for independent scaling of business logic and data access layers in a production environment.",
+        "outcome": "Deepened understanding of architectural patterns and separation of concerns.",
+        "techStack": [
+            "PHP",
+            "MySQL",
+            "MVC"
+        ],
+        "metrics": {
+            "price": "Private",
+            "quality": "Custom Framework",
+            "time": "Active"
+        }
+    },
+    {
+        "id": 203,
+        "title": "SkillStream Classroom",
+        "category": "Education Tech",
+        "image": "https://placehold.co/600x400/9B59B6/FFFFFF?text=SkillStream",
+        "year": "2023",
+        "role": "Full Stack Dev",
+        "description": "Deployed a real-time collaborative platform handling synchronous user connections. Optimized WebSocket channels for low-latency resource sharing and implemented modular backend services to support horizontal scaling during peak class times.",
+        "outcome": "Facilitated seamless remote education and resource distribution.",
+        "techStack": [
+            "C#",
+            "ASP.NET",
+            "Real-time"
+        ],
+        "metrics": {
+            "price": "Private",
+            "quality": "Educational",
+            "time": "Completed"
+        }
+    },
+    {
+        "id": 204,
+        "title": "Campus Nexus",
+        "category": "Java Systems",
+        "image": "https://placehold.co/600x400/34495E/FFFFFF?text=Campus+Nexus",
+        "year": "2024",
+        "role": "Software Engineer",
+        "description": "Structured a complex domain model using advanced Object-Oriented principles to ensure long-term maintainability. Focused on creating loosely coupled modules, enabling easy updates and integration testing of administrative workflows.",
+        "outcome": "Demonstrated strong Object-Oriented Programming principles in a complex domain.",
+        "techStack": [
+            "Java",
+            "OOP",
+            "Swing/FX"
+        ],
+        "metrics": {
+            "price": "Academic",
+            "quality": "Structured",
+            "time": "Active"
+        }
+    },
+    {
+        "id": 205,
+        "title": "Strategy Arena",
+        "category": "Game Development",
+        "image": "https://placehold.co/600x400/2ECC71/FFFFFF?text=Games",
+        "year": "2023",
+        "role": "Game Developer",
+        "description": "Optimized core game loops for maximum computational efficiency. Implemented strict state management patterns to ensure deterministic behavior in algorithmic opponents, treating the game engine as a mission-critical real-time system.",
+        "outcome": "Showcased algorithmic thinking and interactive system design.",
+        "techStack": [
+            "C#",
+            "Algorithms",
+            "Game Logic"
+        ],
+        "metrics": {
+            "price": "Hobby",
+            "quality": "Interactive",
+            "time": "Completed"
+        }
+    },
+    {
+        "id": 206,
+        "title": "TaskMaster Pro",
+        "category": "Web Applications",
+        "image": "https://placehold.co/600x400/E67E22/FFFFFF?text=TaskMaster",
+        "year": "2024",
+        "role": "Frontend Developer",
+        "description": "Developed a resilient project management interface focusing on API consumability and efficient DOM manipulation. Integrated automated status tracking and emphasized clean code standards to facilitate easier team collaboration and futher DevOps integration.",
+        "outcome": "Enhanced team productivity through structured task tracking.",
+        "techStack": [
+            "HTML/JS",
+            "Web API",
+            "CSS"
+        ],
+        "metrics": {
+            "price": "Private",
+            "quality": "Functional",
+            "time": "Active"
+        }
+    },
+    {
+        "id": 103,
+        "title": "Resume / Portfolio",
+        "category": "Web Development",
+        "image": "https://placehold.co/600x400/333333/FFFFFF?text=Portfolio",
+        "year": "2024",
+        "role": "Individual",
+        "description": "Built a configuration-driven portfolio platform separating content from presentation. This 'Infrastructure as Code' approach to frontend development allows for rapid updates and seamless deployment via modern CI/CD git-based workflows.",
+        "outcome": "An extensible portfolio platform that dynamically showcases project metadata.",
+        "techStack": [
+            "JavaScript",
+            "React",
+            "JSON"
+        ],
+        "metrics": {
+            "price": "Public",
+            "quality": "Live",
+            "time": "Active"
+        }
+    }
+]
