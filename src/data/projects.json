@@ -19,6 +19,11 @@
             "price": "Private",
             "quality": "Friendly UI",
             "time": "Active"
+        },
+        "links": {
+            "github": "https://github.com/mr-karabonhlamulo/locagroca-ios",
+            "demo": "#",
+            "figma": "#"
         }
     },
     {
@@ -41,6 +46,10 @@
             "price": "Private",
             "quality": "Reliable",
             "time": "Active"
+        },
+        "links": {
+            "github": "https://github.com/mr-karabonhlamulo/grocery-fullstack",
+            "demo": "#"
         }
     },
     {
@@ -63,6 +72,9 @@
             "price": "Private",
             "quality": "Clean Code",
             "time": "Active"
+        },
+        "links": {
+            "github": "https://github.com/mr-karabonhlamulo/mvc-framework-php"
         }
     },
     {
@@ -85,6 +97,10 @@
             "price": "Private",
             "quality": "Modern Feel",
             "time": "Active"
+        },
+        "links": {
+            "github": "https://github.com/mr-karabonhlamulo/csharp-library-app",
+            "demo": "https://libracore-demo.vercel.app"
         }
     },
     {
@@ -107,6 +123,10 @@
             "price": "Private",
             "quality": "Premium UX",
             "time": "Active"
+        },
+        "links": {
+            "github": "https://github.com/mr-karabonhlamulo/fintech-dashboard",
+            "figma": "#"
         }
     },
     {
@@ -129,6 +149,10 @@
             "price": "Public",
             "quality": "Dynamic",
             "time": "Active"
+        },
+        "links": {
+            "github": "https://github.com/mr-karabonhlamulo/resume",
+            "demo": "#"
         }
     },
     {
@@ -151,6 +175,9 @@
             "price": "Private",
             "quality": "Secure",
             "time": "Active"
+        },
+        "links": {
+            "github": "https://github.com/mr-karabonhlamulo/csharp-hospital-app"
         }
     },
     {
@@ -173,6 +200,9 @@
             "price": "Private",
             "quality": "Efficient",
             "time": "Active"
+        },
+        "links": {
+            "github": "https://github.com/mr-karabonhlamulo/csharp-grocery-app"
         }
     },
     {
@@ -195,6 +225,9 @@
             "price": "Private",
             "quality": "Reliable",
             "time": "Active"
+        },
+        "links": {
+            "github": "https://github.com/mr-karabonhlamulo/csharp-booking-app"
         }
     },
     {
@@ -217,6 +250,9 @@
             "price": "Private",
             "quality": "Searchable",
             "time": "Active"
+        },
+        "links": {
+            "github": "https://github.com/mr-karabonhlamulo/csharp-library-app"
         }
     },
     {
@@ -239,6 +275,9 @@
             "price": "Private",
             "quality": "Interactive",
             "time": "Active"
+        },
+        "links": {
+            "github": "https://github.com/mr-karabonhlamulo/csharp-virtualclassroom-app"
         }
     },
     {
@@ -261,6 +300,9 @@
             "price": "Open Source",
             "quality": "Fun",
             "time": "Active"
+        },
+        "links": {
+            "github": "https://github.com/mr-karabonhlamulo/csharp-snakegame-app"
         }
     }
 ]

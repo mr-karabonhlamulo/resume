@@ -1,7 +1,8 @@
 import React from 'react';
 import './ProjectGrid.css';
 import {
-    FaEye, FaReact, FaNodeJs, FaLaravel, FaPhp, FaVuejs, FaCss3, FaDatabase, FaJava
+    FaEye, FaReact, FaNodeJs, FaLaravel, FaPhp, FaVuejs, FaCss3, FaDatabase, FaJava,
+    FaGithub, FaFigma, FaDribbble, FaExternalLinkAlt
 } from 'react-icons/fa';
 import {
     SiMongodb, SiMysql, SiDotnet, SiMicrosoftsqlserver, SiVite, SiCsharp
@@ -59,28 +60,43 @@ const ProjectGrid = ({ projects, onProjectClick }) => {
                                 <p style={{ marginTop: '0.5rem' }}><strong>Outcome:</strong> {project.outcome}</p>
                             </div>
 
-                            {/* Tech Stack Logos */}
-                            <div className="tech-stack-logos" style={{ marginTop: '1.5rem' }}>
-                                {project.techStack && project.techStack.map((tech, idx) => (
-                                    <div key={idx} className="tech-logo-wrapper" title={tech}>
-                                        {getTechIcon(tech)}
-                                    </div>
-                                ))}
-                            </div>
-
-                            {project.link && (
-                                <div className="project-links">
-                                    <a
-                                        href={project.link}
-                                        className="project-link"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        onClick={(e) => e.stopPropagation()}
-                                    >
-                                        View Project <span style={{ fontSize: '0.8em' }}>↗</span>
-                                    </a>
+                            {/* Footer: Tech Stack (Left) & Social Links (Right) */}
+                            <div className="project-footer">
+                                {/* Tech Stack Logos */}
+                                <div className="tech-stack-logos">
+                                    {project.techStack && project.techStack.map((tech, idx) => (
+                                        <div key={idx} className="tech-logo-wrapper" title={tech}>
+                                            {getTechIcon(tech)}
+                                        </div>
+                                    ))}
                                 </div>
-                            )}
+
+                                {/* Social Links */}
+                                {project.links && (
+                                    <div className="social-links">
+                                        {project.links.github && (
+                                            <a href={project.links.github} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} title="View Code">
+                                                <FaGithub size={18} />
+                                            </a>
+                                        )}
+                                        {project.links.figma && (
+                                            <a href={project.links.figma} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} title="View Types">
+                                                <FaFigma size={18} />
+                                            </a>
+                                        )}
+                                        {project.links.dribbble && (
+                                            <a href={project.links.dribbble} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} title="View Design">
+                                                <FaDribbble size={18} />
+                                            </a>
+                                        )}
+                                        {project.links.demo && (
+                                            <a href={project.links.demo} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} title="Live Demo">
+                                                <FaExternalLinkAlt size={16} />
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
                 ))}

@@ -84,12 +84,14 @@
 }
 
 /* Full‑width description for each project */
+/* Full‑width description for each project */
 .project-description {
     margin-top: var(--space-sm);
     line-height: 1.6;
     color: var(--text-secondary);
     font-size: 0.95rem;
     text-align: left;
+    margin-bottom: auto; /* Push footer down */
 }
 
 .project-description strong {
@@ -97,12 +99,21 @@
     font-weight: 600;
 }
 
-/* New Tech Stack Logos Style */
+/* Footer Container: Splits Stack & Socials */
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-subtle);
+}
+
+/* Tech Stack (Left) */
 .tech-stack-logos {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-bottom: 24px;
     align-items: center;
 }
 
@@ -112,29 +123,30 @@
     align-items: center;
     justify-content: center;
     color: var(--text-secondary);
-    /* Fallback */
-    transition: transform 0.2s;
+    transition: transform 0.2s, color 0.2s;
 }
 
 .tech-logo-wrapper:hover {
     transform: translateY(-2px);
-}
-
-.project-links {
-    margin-top: auto;
-}
-
-.project-link {
-    font-size: 0.8rem;
     color: var(--text-main);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-    border-bottom: 1px solid transparent;
-    padding-bottom: 4px;
-    transition: border-color 0.2s;
 }
 
-.project-link:hover {
-    border-bottom-color: var(--text-main);
+/* Social Links (Right) */
+.social-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.social-links a {
+    color: var(--text-light); /* Softer default color */
+    transition: color 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:hover {
+    color: var(--text-main); /* Pop on hover */
+    transform: translateY(-2px);
 }
