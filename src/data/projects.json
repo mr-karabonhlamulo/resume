@@ -6,16 +6,17 @@
         "image": "https://placehold.co/600x400/FF6B6B/FFFFFF?text=LocaGroca",
         "year": "2024",
         "role": "Mobile Engineer",
-        "description": "Architected a high-performance SwiftUI application focused on seamless user experience and data reliability. Implemented robust MVVM patterns and efficient offline storage mechanisms to ensure the application remains responsive and functional regardless of network conditions.",
-        "outcome": "A polished, responsive iOS experience emphasizing local engagement and fresh aesthetics.",
+        "description": "Addressed the anti-pattern of 'Massive View Controllers' which often renders iOS codebases untestable. I implemented the MVVM (Model-View-ViewModel) architecture to strictly decouple UI rendering from business logic. This approach was chosen to enforce the Single Responsibility Principle (SOLID), ensuring that view logic remains lightweight and ensuring the business rules are unit-testable in isolation.",
+        "outcome": "A testable, modular iOS architecture with clear separation of concerns.",
         "techStack": [
             "Swift",
             "SwiftUI",
+            "MVVM",
             "CoreData"
         ],
         "metrics": {
             "price": "Private",
-            "quality": "Production Ready",
+            "quality": "SOLID Principles",
             "time": "Active"
         }
     },
@@ -26,56 +27,38 @@
         "image": "https://placehold.co/600x400/4ECDC4/FFFFFF?text=Grocery+App",
         "year": "2024",
         "role": "Full Stack Engineer",
-        "description": "Designed a unified full-stack ecosystem bridging mobile clients with powerful backend services. Focused on data consistency and efficient API design to synchronize inventory and order management in real-time.",
-        "outcome": "Seamless synchronization between user cart, inventory, and order management.",
+        "description": "Solved the 'it works on my machine' dilemma caused by inconsistent environments between development and production. I architected the backend as stateless services compliant with 12-Factor App principles, specifically focusing on Dev/Prod parity and backing services. This ensures that the API behaves identically across all stages, eliminating environment-specific bugs during mobile integration.",
+        "outcome": "Reliable, stateless backend services ensuring consistent mobile integration.",
         "techStack": [
             "Swift",
-            "Full Stack",
-            "REST API"
+            "REST API",
+            "12-Factor App",
+            "CI/CD"
         ],
         "metrics": {
             "price": "Private",
-            "quality": "Scalable",
+            "quality": "12-Factor Compliant",
             "time": "Active"
         }
     },
     {
-        "id": 201,
-        "title": "MediPlus (Hospital)",
-        "category": "Enterprise Systems",
-        "image": "https://placehold.co/600x400/E74C3C/FFFFFF?text=MediPlus",
+        "id": 15,
+        "title": "Home Services (MVC)",
+        "category": "Software Architecture",
+        "image": "/assets/projects/project-15.jpg",
         "year": "2024",
-        "role": "Backend Engineer",
-        "description": "Engineered a secure, standards-compliant enterprise platform using C# and .NET. Prioritized system integrity and data accuracy to handle sensitive patient records and critical administrative workflows without compromise.",
-        "outcome": "Improved data accuracy and administrative efficiency in a healthcare context.",
+        "role": "Backend Architect",
+        "description": "Tackled the issue of 'Spaghetti Code' where business logic is interspersed with HTML, making maintenance a nightmare. I engineered a custom MVC framework to strictly enforce Separation of Concerns (SoC). This architectural choice ensures that data access (Model), user interface (View), and application logic (Controller) change independently, adhering to the Open/Closed Principle for future extensions.",
+        "outcome": "A modular framework allowing independent scaling of logic and presentation.",
         "techStack": [
-            "C#",
-            ".NET",
-            "Blazor"
+            "PHP",
+            "MySQL",
+            "MVC Pattern",
+            "OOP"
         ],
         "metrics": {
             "price": "Private",
-            "quality": "Stable",
-            "time": "Active"
-        }
-    },
-    {
-        "id": 202,
-        "title": "Voyager Booking",
-        "category": "Enterprise Systems",
-        "image": "https://placehold.co/600x400/F1C40F/FFFFFF?text=Voyager",
-        "year": "2024",
-        "role": "Systems Architect",
-        "description": "Developed a robust booking system capable of handling complex transaction logic. Optimized database interactions and query performance to ensure reliable booking orchestration and data consistency under load.",
-        "outcome": "A reliable, transaction-safe booking system for transport management.",
-        "techStack": [
-            "C#",
-            "ASP.NET",
-            "SQL"
-        ],
-        "metrics": {
-            "price": "Private",
-            "quality": "Robust",
+            "quality": "Clean Architecture",
             "time": "Active"
         }
     },
@@ -85,157 +68,60 @@
         "category": "Web Development",
         "image": "/assets/projects/project-10.jpg",
         "year": "2024",
-        "role": "Lead Developer",
-        "description": "Modernized legacy concepts into a scalable, component-driven React application. Leveraged TypeScript for strict type safety and maintainability, ensuring the platform is robust enough for long-term evolution and feature expansion.",
-        "outcome": "A highly interactive, visually striking platform for digital resource management.",
+        "role": "Frontend Specialist",
+        "description": "Mitigated the risk of 'Fragile Base Class' problems and unpredictable UI side effects in complex layouts. I utilized React's component-based architecture with TypeScript to enforce Encapsulation and Type Safety. This decision ensures that each UI component manages its own state and dependencies, preventing leaky abstractions and making the system resilient to refactoring.",
+        "outcome": "A resilient, type-safe component library with predictable rendering.",
         "techStack": [
             "TypeScript",
             "React",
+            "OOD",
             "Node.js"
         ],
         "metrics": {
             "price": "Private",
-            "quality": "Modern UI",
+            "quality": "Encapsulated",
             "time": "Active"
         }
     },
     {
         "id": 11,
         "title": "Futuristic Banking",
-        "category": "FinTech & Web",
+        "category": "FinTech Engineering",
         "image": "/assets/projects/project-11.jpg",
         "year": "2024",
         "role": "Frontend Architect",
-        "description": "Orchestrated a premium UI experience by integrating dynamic elements with efficient rendering techniques. Focused on secure state management and smooth interaction models to reflect the trust and reliability required in financial applications.",
-        "outcome": "A premium financial simulation platform with high user engagement metrics.",
+        "description": "Addressed the problem of race conditions and unpredictable state mutations common in asynchronous financial transactions. I implemented a Unidirectional Data Flow pattern (Redux-style) to manage application state. This was chosen to maintain 'Single Source of Truth', ensuring that all UI updates are deterministic and easier to debug, which is critical for financial data integrity.",
+        "outcome": "Deterministic state management ensuring high-integrity transaction flows.",
         "techStack": [
             "TypeScript",
             "React",
-            "3D Animation"
+            "Immutable State",
+            "3D"
         ],
         "metrics": {
             "price": "Private",
-            "quality": "Premium UX",
-            "time": "Active"
-        }
-    },
-    {
-        "id": 15,
-        "title": "Home Services (MVC)",
-        "category": "PHP Systems",
-        "image": "/assets/projects/project-15.jpg",
-        "year": "2024",
-        "role": "Backend Developer",
-        "description": "Built a custom, lightweight MVC framework to enable precise control over application architecture. Enforced a strict separation of concerns to allow for independent scaling and maintenance of business logic and data layers.",
-        "outcome": "Deepened understanding of architectural patterns and separation of concerns.",
-        "techStack": [
-            "PHP",
-            "MySQL",
-            "MVC"
-        ],
-        "metrics": {
-            "price": "Private",
-            "quality": "Custom Framework",
-            "time": "Active"
-        }
-    },
-    {
-        "id": 203,
-        "title": "SkillStream Classroom",
-        "category": "Education Tech",
-        "image": "https://placehold.co/600x400/9B59B6/FFFFFF?text=SkillStream",
-        "year": "2023",
-        "role": "Full Stack Dev",
-        "description": "Created a real-time collaborative platform connecting dispersed users. Implemented efficient socket-based communication and modular services to support seamless interaction and resource sharing.",
-        "outcome": "Facilitated seamless remote education and resource distribution.",
-        "techStack": [
-            "C#",
-            "ASP.NET",
-            "Real-time"
-        ],
-        "metrics": {
-            "price": "Private",
-            "quality": "Educational",
-            "time": "Completed"
-        }
-    },
-    {
-        "id": 204,
-        "title": "Campus Nexus",
-        "category": "Java Systems",
-        "image": "https://placehold.co/600x400/34495E/FFFFFF?text=Campus+Nexus",
-        "year": "2024",
-        "role": "Software Engineer",
-        "description": "Structured a complex domain model using advanced Object-Oriented principles. Focused on creating loosely coupled, highly cohesive modules that allow for easy maintenance and scalability of administrative workflows.",
-        "outcome": "Demonstrated strong Object-Oriented Programming principles in a complex domain.",
-        "techStack": [
-            "Java",
-            "OOP",
-            "Swing/FX"
-        ],
-        "metrics": {
-            "price": "Academic",
-            "quality": "Structured",
-            "time": "Active"
-        }
-    },
-    {
-        "id": 205,
-        "title": "Strategy Arena",
-        "category": "Game Development",
-        "image": "https://placehold.co/600x400/2ECC71/FFFFFF?text=Games",
-        "year": "2023",
-        "role": "Game Developer",
-        "description": "Optimized core logic loops for computational efficiency and performance. Implemented strict state management to ensure deterministic behavior, treating the system with the same rigor required for mission-critical real-time applications.",
-        "outcome": "Showcased algorithmic thinking and interactive system design.",
-        "techStack": [
-            "C#",
-            "Algorithms",
-            "Game Logic"
-        ],
-        "metrics": {
-            "price": "Hobby",
-            "quality": "Interactive",
-            "time": "Completed"
-        }
-    },
-    {
-        "id": 206,
-        "title": "TaskMaster Pro",
-        "category": "Web Applications",
-        "image": "https://placehold.co/600x400/E67E22/FFFFFF?text=TaskMaster",
-        "year": "2024",
-        "role": "Frontend Developer",
-        "description": "Developed a resilient project management interface with a focus on clean API integration. Emphasized code quality and standard compliance to facilitate easy ongoing maintenance and team collaboration.",
-        "outcome": "Enhanced team productivity through structured task tracking.",
-        "techStack": [
-            "HTML/JS",
-            "Web API",
-            "CSS"
-        ],
-        "metrics": {
-            "price": "Private",
-            "quality": "Functional",
+            "quality": "Deterministic",
             "time": "Active"
         }
     },
     {
         "id": 103,
         "title": "Resume / Portfolio",
-        "category": "Web Development",
+        "category": "DevOps & Web",
         "image": "https://placehold.co/600x400/333333/FFFFFF?text=Portfolio",
         "year": "2024",
-        "role": "Individual",
-        "description": "Built a configuration-driven platform separating content from presentation. This approach treats the frontend as a scalable product, allowing for rapid updates and clean separation of concerns.",
-        "outcome": "An extensible portfolio platform that dynamically showcases project metadata.",
+        "role": "Software Engineer",
+        "description": "Overcame the inefficiency of requiring code deployments for simple content updates. I applied the 12-Factor principle of 'Externalized Configuration' by separating content (data) from the codebase. This allows the portfolio's content to be updated dynamically without triggering a full rebuild of the application logic, treating content as a backing service.",
+        "outcome": "A meaningful separation of code and content, enabling rapid updates.",
         "techStack": [
             "JavaScript",
-            "React",
-            "JSON"
+            "JSON",
+            "12-Factor Config",
+            "React"
         ],
         "metrics": {
             "price": "Public",
-            "quality": "Live",
+            "quality": "Config Driven",
             "time": "Active"
         }
     }
