@@ -3,37 +3,17 @@ import Sidebar from '@/components/Sidebar';
 import MainContent from '@/components/MainContent';
 import AdminDashboard from '@/components/AdminDashboard';
 
+import resumeDataStatic from './data/resume.json';
+import projectsDataStatic from './data/projects.json';
+
 const App = () => {
-    const [resumeData, setResumeData] = useState(null);
-    const [projectsData, setProjectsData] = useState(null);
-    const [loading, setLoading] = useState(true);
+    const [resumeData, setResumeData] = useState(resumeDataStatic);
+    const [projectsData, setProjectsData] = useState(projectsDataStatic);
+    const [loading, setLoading] = useState(false);
     const [view, setView] = useState('main'); // 'main' or 'admin'
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const [resumeRes, projectsRes] = await Promise.all([
-                    fetch('/api/data/resume'),
-                    fetch('/api/data/projects')
-                ]);
-
-                if (resumeRes.ok && projectsRes.ok) {
-                    const resume = await resumeRes.json();
-                    const projects = await projectsRes.json();
-                    setResumeData(resume);
-                    setProjectsData(projects);
-                } else {
-                    console.error("Failed to fetch data");
-                }
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchData();
-    }, []);
+    // We use static imports for the main view so they work on Vercel/GitHub Pages without a backend.
+    // The Admin Dashboard component will still try to contact the backend, which is intended (only works locally).
 
     const handleProfileClick = () => {
         setView('admin');
