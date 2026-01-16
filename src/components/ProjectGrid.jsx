@@ -41,14 +41,21 @@ const ProjectGrid = ({ projects, onProjectClick }) => {
                         onClick={() => onProjectClick && onProjectClick(project)}
                         style={{ cursor: onProjectClick ? 'pointer' : 'default' }}
                     >
-                        <div className="project-image">
-                            {project.image ? (
-                                <img src={project.image} alt={project.title} className="project-img-cover" />
-                            ) : (
-                                <div className="image-placeholder">
-                                    {project.title}
-                                </div>
-                            )}
+                        <div className="project-image project-card-header">
+                            {/* Replaced image with consistent theme header for grid view */}
+                            <div className="card-theme-header" style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                width: '100%',
+                                height: '100%',
+                                background: 'linear-gradient(135deg, var(--bg-card) 0%, var(--bg-main) 100%)',
+                                color: 'var(--text-light)',
+                                fontSize: '3rem'
+                            }}>
+                                {/* Show the main tech icon larger as the 'hero' of the card */}
+                                {project.techStack && getTechIcon(project.techStack[0])}
+                            </div>
                         </div>
                         <div className="project-info">
                             <h4 className="project-title">{project.title}</h4>
