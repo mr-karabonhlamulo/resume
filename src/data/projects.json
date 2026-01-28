@@ -3,7 +3,7 @@
         "id": 101,
         "title": "LocaGroca (Food)",
         "category": "iOS Development",
-        "image": "https://placehold.co/600x400/FF6B6B/FFFFFF?text=LocaGroca",
+        "image": "",
         "year": "2024",
         "role": "Mobile Engineer",
         "problem": "Generic delivery apps can feel so cold and robotic, and honestly, the code behind them often gets just as messy. I wanted to build something that felt human and welcoming.",

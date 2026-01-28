@@ -43,16 +43,7 @@ const ProjectGrid = ({ projects, onProjectClick }) => {
                     >
                         <div className="project-image project-card-header">
                             {/* Replaced image with consistent theme header for grid view */}
-                            <div className="card-theme-header" style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                width: '100%',
-                                height: '100%',
-                                background: 'linear-gradient(135deg, var(--bg-card) 0%, var(--bg-main) 100%)',
-                                color: 'var(--text-light)',
-                                fontSize: '3rem'
-                            }}>
+                            <div className="card-theme-header">
                                 {/* Show the main tech icon larger as the 'hero' of the card */}
                                 {project.techStack && getTechIcon(project.techStack[0])}
                             </div>

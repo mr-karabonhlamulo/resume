@@ -10,7 +10,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px; /* Reduced from 24px */
+    margin-bottom: 20px;
+    /* Reduced from 24px */
 }
 
 .back-btn,
@@ -38,7 +39,8 @@
 }
 
 .detail-header {
-    margin-bottom: 24px; /* Reduced from 32px */
+    margin-bottom: 24px;
+    /* Reduced from 32px */
 }
 
 .detail-title {
@@ -46,14 +48,16 @@
     font-weight: 700;
     color: var(--text-main);
     letter-spacing: -0.02em;
-    margin-bottom: 8px; /* Reduced from 12px */
+    margin-bottom: 8px;
+    /* Reduced from 12px */
     line-height: 1.1;
 }
 
 .detail-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px; /* Reduced from 20px */
+    gap: 16px;
+    /* Reduced from 20px */
     color: var(--text-light);
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -68,10 +72,12 @@
     width: 100%;
     /* Responsive height instead of fixed 400px */
     height: auto;
-    aspect-ratio: 21 / 9; /* Widescreen feel */
+    aspect-ratio: 21 / 9;
+    /* Widescreen feel */
     max-height: 600px;
     background: #f0f0f0;
-    margin-bottom: 32px; /* Reduced from 40px */
+    margin-bottom: 32px;
+    /* Reduced from 40px */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,15 +92,39 @@
 }
 
 .detail-image-placeholder {
-    color: #aaa;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
+    background: repeating-linear-gradient(45deg,
+            var(--bg-card),
+            var(--bg-card) 10px,
+            var(--bg-main) 10px,
+            var(--bg-main) 20px);
+    /* Technical / Blueprint look */
+    border: 2px dashed var(--border-subtle);
+    gap: 1rem;
+    min-height: 300px;
+}
+
+.detail-image-placeholder::after {
+    content: "Image Space Available";
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 8px;
+    font-weight: 400;
 }
 
 .detail-content {
     display: grid;
-    gap: 24px; /* Reduced from 32px */
+    gap: 24px;
+    /* Reduced from 32px */
     /* Use CSS Grid to make text blocks not span too wide if we want readability, 
        but user asked for widescreen. We can perhaps make it 2 columns on very large screens?
        Let's keep it simply stacked but wide for now as requested. */
@@ -102,7 +132,8 @@
 
 .content-block h3 {
     font-size: 1.2rem;
-    margin-bottom: 8px; /* Reduced from 12px */
+    margin-bottom: 8px;
+    /* Reduced from 12px */
     color: var(--text-main);
     border-bottom: 1px solid var(--border-subtle);
     padding-bottom: 6px;
@@ -110,14 +141,17 @@
 }
 
 .content-block p {
-    line-height: 1.6; /* Slightly tighter line height */
+    line-height: 1.6;
+    /* Slightly tighter line height */
     color: var(--text-secondary);
     font-size: 1rem;
-    max-width: 100%; /* Ensure it fills container */
+    max-width: 100%;
+    /* Ensure it fills container */
 }
 
 .tech-section {
-    margin-top: 32px; /* Reduced */
+    margin-top: 32px;
+    /* Reduced */
     border-bottom: 1px solid var(--border-subtle);
     padding-bottom: 32px;
     margin-bottom: 32px;
@@ -145,7 +179,8 @@
 
 .related-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Slightly wider cards */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Slightly wider cards */
     gap: 20px;
 }
 
@@ -159,7 +194,8 @@
 }
 
 .related-image {
-    height: 160px; /* Slightly taller */
+    height: 160px;
+    /* Slightly taller */
     background: #f4f4f4;
     margin-bottom: 12px;
     overflow: hidden;

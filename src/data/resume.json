@@ -44,14 +44,14 @@
             "company": "Sonxit Pty Ltd",
             "logo": "https://placehold.co/100x100/000000/FFFFFF?text=Sonxit",
             "role": "Software Developer",
-            "period": "Jun 2029 – Jun 2024",
+            "period": "Jun 2019 – Jun 2024",
             "location": "Sandton (Remote)",
-            "description": "Engineered full-stack solutions and optimized development workflows in a fast-paced environment. Transitioned legacy monolithic components into modular architectures, enhancing system scalability and maintainability. Implemented automated deployment pipelines and containerization strategies that streamlined release cycles, ensuring consistent and reliable software delivery alongside robust feature development.",
+            "description": "Modernized legacy monolithic systems by transitioning core components into modular, microservices-oriented architectures, significantly improving system scalability and developer velocity. Orchestrated end-to-end CI/CD deployment pipelines and containerization strategies (Docker/Kubernetes), reducing deployment lead times and ensuring environment parity. Engineered robust full-stack solutions, utilizing a modern tech stack to deliver high-performance features in a fast-paced, Agile environment. Optimized database performance and system workflows, ensuring the platform could handle increased user loads during periods of rapid growth. Mentored junior developers and contributed to internal documentation, establishing a culture of technical excellence and collaborative problem-solving.",
             "tech_stack": [
-                "Software Architecture",
                 "Full Stack Development",
-                "Automation",
-                "Containerization",
+                "Software Architecture",
+                "Docker",
+                "CI/CD",
                 "Database Management"
             ]
         },
@@ -62,12 +62,12 @@
             "role": "Software Systems Developer",
             "period": "Jan 2017 – Jul 2019",
             "location": "Johannesburg",
-            "description": "Focused on the core stability and performance of high-volume logistics systems. Developed backend logic that ensured data integrity across thousands of daily transactions. Collaborated on maximizing system uptime through efficient database querying, load balancing strategies, and rigorous integration testing, establishing a foundation of reliability for critical business operations.",
+            "description": "Developed and maintained mission-critical backend logic for high-volume logistics systems, managing thousands of concurrent daily transactions. Enhanced system reliability and uptime through aggressive database query optimization and the implementation of load-balancing strategies. Ensured 99.9% data integrity across distributed systems by executing rigorous integration testing and error-handling protocols. Collaborated with cross-functional teams to translate complex business logistics into scalable software requirements.",
             "tech_stack": [
                 "Backend Engineering",
                 "System Optimization",
+                "Linux",
                 "Database Design",
-                "Linux Environment",
                 "Integration Testing"
             ]
         },
@@ -78,12 +78,12 @@
             "role": "Infrastructure Support",
             "period": "Jan 2016 – Dec 2017",
             "location": "Centurion",
-            "description": "Provided specialized technical support for network and hardware infrastructure. Ensured the operational continuity of essential communications systems through proactive maintenance, precise configuration of network devices, and systematic troubleshooting. This foundational role cultivated a deep understanding of the physical and logical layers supporting enterprise software.",
+            "description": "Managed end-to-end network and hardware infrastructure for essential enterprise communications. Executed proactive system maintenance and precise configuration of network devices to ensure zero downtime for critical business operations. Resolved complex technical bottlenecks through systematic troubleshooting of physical and logical network layers.",
             "tech_stack": [
                 "Network Engineering",
-                "System Maintenance",
+                "Infrastructure Configuration",
                 "Technical Support",
-                "Infrastructure Configuration"
+                "System Maintenance"
             ]
         }
     ],
@@ -95,25 +95,16 @@
             "degree": "BSc. in Information Technology",
             "period": "2020 – 2024",
             "location": "South Africa",
-            "focus": "Comprehensive study of Software Engineering, focusing on distributed systems, advanced algorithms, and enterprise architecture. Applied academic theory to practical, industry-relevant projects involving modern tech stacks and complex data structures."
+            "focus": "Note: Completed degree while working full-time in a Senior Developer capacity. Focus: Distributed Systems, Advanced Algorithms, and Enterprise Architecture."
         },
         {
             "id": 2,
-            "institution": "Belgium Campus ITVersity",
-            "logo": "https://placehold.co/100x100/A5092A/FFFFFF?text=BC",
-            "degree": "Diploma in Software Development",
-            "period": "2013 – 2016",
-            "location": "South Africa",
-            "focus": "Technical training centered on the fundamentals of programming, networking, and business systems analysis. Built a strong base in operational logic and application lifecycle management."
-        },
-        {
-            "id": 3,
             "institution": "Willowridge High School",
             "logo": "https://placehold.co/100x100/003366/FFFFFF?text=WHS",
             "degree": "National Senior Certificate",
-            "period": "2008 – 2012",
+            "period": "2012",
             "location": "Pretoria, South Africa",
-            "focus": "Completed with University Exemption."
+            "focus": ""
         }
     ],
     "languages": [
