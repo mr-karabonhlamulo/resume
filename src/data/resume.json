@@ -11,11 +11,8 @@
         "linkedin": "https://linkedin.com/in/karabo-magongwa",
         "github": "https://github.com/sir-karabo"
     },
-    "professional_summary":"Adaptable Software Engineer specialising in the design and delivery of robust, high-performance systems. I focus on architectural integrity, clean code, and operational reliability — building solutions that scale smoothly from development to production.
-
-My experience spans full-stack development, backend services, database optimisation, and infrastructure automation. This allows me to approach problems holistically and deliver systems that are not only functional but maintainable, secure, and efficient.
-
-I enjoy translating complex business requirements into practical technical solutions that improve performance, reduce operational costs, and support long-term growth.t: update kernel","core_skills": {
+    "professional_summary": "Adaptable Software Engineer specialising in the design and delivery of robust, high-performance systems. I focus on architectural integrity, clean code, and operational reliability — building solutions that scale smoothly from development to production.\n\nMy experience spans full-stack development, backend services, database optimisation, and infrastructure automation. This allows me to approach problems holistically and deliver systems that are not only functional but maintainable, secure, and efficient.\n\nI enjoy translating complex business requirements into practical technical solutions that improve performance, reduce operational costs, and support long-term growth.\n\nI take joy in designing & delivering reliable, scaleable & maintainable applications that operate efficiently in production environments",
+    "core_skills": {
         "technical": [
             "System Architecture & Design",
             "Full Stack Development (React, Node.js, PHP)",
